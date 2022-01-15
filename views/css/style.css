@@ -1,0 +1,263 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    margin-top: 30px;
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#bars {
+    margin-left: 5%;
+    margin-right: 3%;
+    font-size: 45px;
+    color: #565656;
+    cursor: pointer;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+#sub-logo {
+    font-size: 20px;
+    color: #565656;
+}
+
+#sub-sub-logo {
+    font-size:32px;
+    color: #207f7a;
+}
+
+#form {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#title {
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+#sub-title {
+    font-size: 25px;
+    color: #565656;
+}
+
+#sub-sub-title {
+    font-size: 35px;
+    color: #207f7a;
+}
+
+.link {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#link {
+    padding: 20px 40px;
+    width: 30%;
+    border-radius: 15px;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid #c9c3c3;
+    box-shadow: 4px 4px 12px rgb(173, 166, 166);
+}
+
+#link::placeholder {
+    color: #565656;
+}
+
+#download, .buttons {
+    padding: 20px 30px;
+    font-size: 20px;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    margin-left: 20px;
+    border: none;
+    background-color: #309e9b;
+    color: white;
+    box-shadow: 4px 4px 12px rgb(173, 166, 166);
+}
+
+.buttons {
+    padding: 12px 25px;
+}
+
+.buttons a {
+    color: white;
+}
+
+.files {
+    width: 60%;
+    padding: 12px 30px;
+    border: 1px solid #c9c3c3;
+    box-shadow: 4px 4px 12px rgb(173, 166, 166);
+    border-radius: 15px;
+}
+
+.result {
+    width: 100%;
+    display: flex;
+    flex-direction: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.file-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.thumbnail {
+    margin-bottom: 30px;
+}
+
+#alert {
+    color: #207f7a;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+
+
+#faqs, #conclusion {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+}
+.context {
+    width: 90%;
+    padding: 10px 30px;;
+    box-shadow: 4px 4px 12px rgb(173, 166, 166);
+    border-radius: 15px;
+    border-left: 15px solid #207f7a;
+    margin-bottom: 15px;
+}
+
+.context h3{
+    color: #207f7a;
+}
+
+#terms {
+    width: 90%;
+    box-shadow: 4px 4px 12px rgb(173, 166, 166);
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+#disclaimer {
+    width: 90%;
+    box-shadow: 4px 4px 12px rgb(173, 166, 166);
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+#terms h3 {
+    padding: 15px;
+    background-color: #207f7a;
+    color: white;
+    text-align: center;
+    margin: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#disclaimer h3{
+    padding: 15px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#terms p, #disclaimer p {
+    padding: 30px 30px 15px 30px;
+}
+
+#faq-title {
+    background-color: #207f7a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 4px 4px 12px rgb(173, 166, 166);
+    margin-bottom: 30px;
+}
+
+#footer {
+    background-color: #207f7a;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    margin-top: 100px;
+    padding: 15px 30px;
+}
+
+@media only screen and (max-width: 600px) {
+	.link {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #download {
+        margin-left: 0px;
+    }
+
+    #link {
+        width: 80%;
+        margin-bottom: 25px;
+    }
+
+    .files {
+        width: 60%;
+    }
+
+    .buttons {
+        padding: 12px 15px;
+    }
+
+    #faq-title {
+        font-size: 24px;
+    }
+
+    #terms h3, #disclaimer h3, .context h3 , #footer{
+        font-size: 24px;
+    }
+}
